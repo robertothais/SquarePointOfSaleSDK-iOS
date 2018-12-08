@@ -86,7 +86,9 @@
         return NO;
     }
 
-    return [[UIApplication sharedApplication] openURL:URL options:@{} completionHandler:nil];
+    [[UIApplication sharedApplication] openURL:URL options:@{} completionHandler:nil];
+
+    return YES
 }
 
 @end
