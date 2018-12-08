@@ -13,11 +13,6 @@ Pod::Spec.new do |s|
 
   s.private_header_files = 'Sources/Categories/NSDictionary+SCCAdditions.h'
 
-  s.test_spec 'Tests' do |test_spec|
-  	test_spec.source_files = 'Tests/**/*.{h,m}'
-  	test_spec.dependency 'OCMock', '= 3.1'
-  end
-
   s.pod_target_xcconfig = {
 	  #
 	  # Treat warnings as errors.
