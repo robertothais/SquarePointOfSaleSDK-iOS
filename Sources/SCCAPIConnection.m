@@ -86,9 +86,17 @@
         return NO;
     }
 
-    [[UIApplication sharedApplication] openURL:URL options:@{} completionHandler:nil];
+    UIApplication *application = [UIApplication sharedApplication];
 
-    return YES;
+    if ([application respondsToSelector:@selector(openURL:options:completionHandler:)]) {
+        [application openURL:URL options:@{}
+        completionHandler:nil];
+        return YES
+    } else {
+        return [application openURL:URL];
+    }
+
+    [[UIApplication sharedApplication] openURL:URL options:@{} completionHandler:nil];
 }
 
 @end
