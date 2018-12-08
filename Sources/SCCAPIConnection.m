@@ -91,7 +91,7 @@
     if ([application respondsToSelector:@selector(openURL:options:completionHandler:)]) {
         [application openURL:URL options:@{}
         completionHandler:nil];
-        return YES
+        return YES;
     } else {
         return [application openURL:URL];
     }
