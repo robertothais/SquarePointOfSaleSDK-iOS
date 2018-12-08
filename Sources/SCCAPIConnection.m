@@ -88,12 +88,9 @@
 
     UIApplication *application = [UIApplication sharedApplication];
 
-    if (@available(iOS 10, *)) {
-        [application openURL:URL options:@{} completionHandler:nil];
-        return YES;
-    } else {
-        return [application openURL:URL];
-    }
+
+    [application openURL:URL options:@{} completionHandler:nil];
+    return YES;
 }
 
 @end
