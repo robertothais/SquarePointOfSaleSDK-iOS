@@ -88,7 +88,7 @@
 
     [[UIApplication sharedApplication] openURL:URL options:@{} completionHandler:nil];
 
-    return YES
+    return YES;
 }
 
 @end
