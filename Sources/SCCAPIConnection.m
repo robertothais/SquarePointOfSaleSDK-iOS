@@ -69,14 +69,14 @@
         }
         return NO;
     }
-    
+
     if (![application canOpenURL:URL]) {
         if (error != NULL) {
             *error = [NSError SCC_cannotOpenApplicationError];
         }
         return NO;
     }
-    
+
     return YES;
 }
 
@@ -86,7 +86,7 @@
         return NO;
     }
 
-    return [[UIApplication sharedApplication] openURL:URL];
+    return [[UIApplication sharedApplication] openURL:URL options:@{} completionHandler:nil];
 }
 
 @end
