@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.authors      = 'Square'
   s.source       = { :git => 'https://github.com/robertothais/SquarePointOfSaleSDK-iOS.git', :tag => '3.3.2' }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'Sources/**/*.{h,m}'
 
